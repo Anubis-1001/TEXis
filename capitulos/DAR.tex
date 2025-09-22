@@ -1,17 +1,16 @@
 \ChapterImageStar[cap:dar]{Análisis de Decisiones y Resolución}{./images/fondo.png}\label{cap:dar}
-
+\mbox{}\\
 \section{Metodología de evaluación}
-\addcontentsline{toc}{section}{1. Metodología de evaluación}
 
 La metodología de evaluación que se aplicó para la elección de la tecnología de Virtualización Basada en Contenedores (VBC) fue DAR (Decision, analysis and resolution) de CMMI \citep{CMMIInstitute2010}. Esta metodología permitió evaluar las necesidades del grupo GRID a través de un proceso estructurado que consideró múltiples alternativas, criterios de evaluación bien definidos y un análisis comparativo. En este caso, se identificaron y analizaron diversas tecnologías VBC —como Docker, Podman, LXC o Kata Containers— aplicando criterios como el tipo de licencia, la compatibilidad con herramientas de orquestación, el rendimiento entre otros. Mediante el uso de matrices DOFA, se logró visualizar las fortalezas y debilidades de cada opción, facilitando una selección alineada con los objetivos estratégicos del sistema. Así, el uso de DAR no solo aportó transparencia al proceso, sino también trazabilidad y justificación técnica frente a una decisión para la arquitectura de infraestructura basada en contenedores.
 
+El proceso de evaluación quedó registrado en un vídeo explicativo disponible en \href{https://youtu.be/xOmuQs2RX2c}{link}.
+
 \section{Resultados de la evaluación}
-\addcontentsline{toc}{section}{2. Resultados de la evaluación}
 
 \input{tablas-images/cp5/dar.tex}
 
 \section{Criterios de evaluación}
-\addcontentsline{toc}{section}{3. Criterios de evaluación}
 
 \subsection{VBC (¿Es una tecnología basada en contenedores?)}
 Este criterio define si la tecnología analizada entra dentro de la categoría de virtualización basada en contenedores, lo cual es el punto de partida para que pueda ser considerada en el análisis. Se evalúa como Sí (SI) o No (NO).
@@ -50,6 +49,9 @@ Difiere levemente del punto 4.3, ya que aquí se mide qué tan bien se integra c
 Este criterio analiza los costos asociados a poner en marcha la tecnología en un entorno real. Incluye licencias, infraestructura, tiempo de configuración y mantenimiento. Una puntuación alta significa bajo costo o costo nulo, lo cual es ideal para instituciones académicas o proyectos con presupuesto limitado.
 
 \section{Tecnología VBC ganadora}
-\addcontentsline{toc}{section}{4. Tecnología VBC ganadora}
 
 Del análisis comparativo realizado, Containerd se posiciona como la tecnología de virtualización basada en contenedores con mejor desempeño general. Destaca por su alta compatibilidad con Docker Hub, soporte para redes y volúmenes, excelente integración con orquestadores como Kubernetes, y una licencia permisiva que facilita su adopción. Además, cuenta con una sólida documentación y un respaldo activo de la comunidad. Estas características hacen de Containerd la opción adecuada para ser implementada en ambientes productivos del grupo de investigación GRID, combinando los diferentes criterios definidos desde el grupo de investigación.
+
+\section{Análisis DAR del motor de Kubernetes}
+
+\input{tablas-images/cp5/dar-k8s.tex}

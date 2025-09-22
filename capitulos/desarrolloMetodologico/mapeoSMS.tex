@@ -1,5 +1,6 @@
 \ChapterImageStar[cap:revisionLiteratura]{Revisión sistemática de la literatura}{./images/fondo.png}\label{cap:revisionLiteratura}
 
+\mbox{}\\
 \section{Construcción de la bitácora}
 
 En búsqueda de una base teórica para la elección de una tecnología de virtualización basada en contenedores, 
@@ -8,7 +9,7 @@ se realizó una revisión del estado del arte. Esta revisión se completó en di
 \subsection{Planeación}
 
 Esta etapa consistió en establecer el propósito general que se buscaba alcanzar con el \SMS\ (\textit{Systematic Mapping Study}). 
-A su vez, definió aspectos como objetivos ( cuadro ~\ref{tab:metas} ), preguntas de investigación ( cuadro~\ref{tab:preguntas} ) y métricas ( cuadro~\ref{tab:metricas} ). Para ello, se siguió el modelo 
+A su vez, definió aspectos como objetivos ver cuadro ~\ref{tab:metas}, preguntas de investigación ver cuadro~\ref{tab:preguntas} y métricas ver cuadro~\ref{tab:metricas}. Para ello, se siguió el modelo 
 Objetivo-Pregunta-Métrica (\textit{Goal-Question-Metric}, GQM). A continuación, se definen los objetivos del \SMS\ aplicado 
 a las tecnologías de virtualización basadas en contenedores en el cuadro.
 
@@ -49,6 +50,7 @@ Proporcionar base sólida para comprender estado del arte de \VBC\ sin análisis
 \caption{Definición de preguntas de investigación del SMS}
 \label{tab:preguntas}
 \end{table}
+
 \subsubsection{Definición de métricas}
 
 \begin{table}[H]
@@ -220,16 +222,16 @@ Finalmente, se obtuvo un total de \textbf{116 artículos} mediante esta estrateg
 
 \subsection{Usando cadenas de búsqueda}
 En el diagrama~\ref{tab:tabla-diagrama-cadena-busqueda} se puede apreciar la estrategia de búsqueda de artículos por medio de base de datos, aplicando las cadenas de búsqueda, se consolidaron los resultados de distintas bases de datos para obtener un total de 6530 resultados, posteriormente y aplicando criterios de exclusión se redujo esta cantidad a menos de 1000 resultados. Adicional a los criterios de exclusión, también se hizo eliminación de artículos duplicados, 205 por parte del ~\textit{Reference Manager} (Mendeley), y 69 por parte del ~\textit{SMS-Builder} para un total de 274 artículos removidos. Finalmente, se realiza la etapa de screening, donde se leen las secciones claves de los artículos, como ~\textit{abstract}, ~\textit{keywords} e introducción, a través de esto se pudo descargar 671 artículos que no eran pertinentes para el estudio.
-\input{tablas-images/cp2/diagrama-cadena-busqueda.tex}
+\input{tablas-images/cp2/diagrama-cadena-busqueda.tex}\label{img:busqueda-bd}
 
 \subsection{Usando bola de nieve}
-Como segunda estrategia de búsqueda dentro del SMS, se aplicó la técnica de ~\textit{Snowball}, la cual consiste en extraer artículos adicionales a partir de las referencias citadas en los estudios obtenidos en la estrategia anterior y de los estudios que citan a estos. De los 110 estudios del paso anterior, se seleccionan aquellos que tengan un SCI más relevante y se agrega uno por inclusión directa, con esto se obtiene un total de 25 artículos de línea base. Aplicando snowball hacia adelante (artículos referenciados) se obtienen 87 nuevos estudios, aplicando snowball hacia atrás (artículos que referencian el artículo base) se obtienen 495, para un total de 582. Finalmente, aplicando criterios de exclusión de remoción de duplicados y aplicando la técnica de screening, se obtiene un resultado de 116 artículos incluidos por bola de nieve. Todo este proceso se puede apreciar en la gráfica~\ref{tab:tabla-diagrama-bola-nieve-busqueda}
-
+Como segunda estrategia de búsqueda dentro del SMS, se aplicó la técnica de ~\textit{Snowball}, la cual consiste en extraer artículos adicionales a partir de las referencias citadas en los estudios obtenidos en la estrategia anterior y de los estudios que citan a estos. De los 110 estudios del paso anterior, se seleccionan aquellos que tengan un SCI más relevante y se agrega uno por inclusión directa, con esto se obtiene un total de 25 artículos de línea base. Aplicando snowball hacia adelante (artículos referenciados) se obtienen 87 nuevos estudios, aplicando snowball hacia atrás (artículos que referencian el artículo base) se obtienen 495, para un total de 582. Finalmente, aplicando criterios de exclusión de remoción de duplicados y aplicando la técnica de screening, se obtiene un resultado de 116 artículos incluidos por bola de nieve. Todo este proceso se puede apreciar en la gráfica~\ref{tab:tabla-diagrama-bola-nieve-busqueda}.
 \input{tablas-images/cp2/diagrama-bola-nieve-busqueda.tex}
 
 \section{Identificación de estudios}
 
 \subsection{Artículos por año y métricas}
+
 
 A continuación se presentan las gráficas que resumen los resultados de los artículos obtenidos y las estrategias anteriores.\\
 
