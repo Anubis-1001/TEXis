@@ -906,3 +906,28 @@ En esta sección se presenta el artículo de revista publicado en Journal of Inf
     \FloatBarrier\stepcounter{jisampage}
     \ifnum\value{jisampage}<35
 \repeat%
+
+\section{Slides de CEIFI}
+\foreach \n in {1,...,16} {
+    \begin{figure}[H]
+        \centering
+        \fbox{\includegraphics[width=0.9\textwidth]{apendices/CEIFI/\n.png}}
+        \caption{Slide \n de CEIFI}
+    \end{figure}
+}
+
+\section{Slides de GRID 2025-I}
+\foreach \n in {1,...,13} {
+    \begin{figure}[H]
+        \centering
+        \fbox{\includegraphics[width=0.9\textwidth]{apendices/GRID-2025/\n.png}}
+        \caption{Slide \n de GRID 2025-I}
+    \end{figure}
+}
+
+\section{Poster GRID 2024-II}
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=0.9\textwidth]{apendices/GRID-2024/image.png}}
+    \caption{Póster de GRID 2024-II}
+\end{figure}
